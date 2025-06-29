@@ -1,2 +1,22 @@
-<p>Cookies</p>
-<p>Ingrédients:</p>
+<div class="cookies">
+  <div class="cookies-title">Cookies !</div>
+  <div class="counter">
+    <div class="counter-action" (click)="UpdateAmount('less')">-</div>
+    <div class="counter-action" (click)="UpdateAmount('more')">+</div>
+    <div class="counter-result">{{Amount}}</div>
+  </div>
+  <div class="cookies-ingredients">
+    <div class="cookies-ingredients-title">Ingredients :</div>
+    <ul class="cookies-ingredients-list">
+      <li class="cookies-ingredients-list-item">Beurre : {{Ingredients.get("Butter")}}g</li>
+      <li class="cookies-ingredients-list-item">Sucre de coco : {{Ingredients.get("CocoSugar")}}g</li>
+      <li class="cookies-ingredients-list-item">Sucre blanc : {{Ingredients.get("WhiteSugar")}}g</li>
+      <li class="cookies-ingredients-list-item">Oeufs : {{Ingredients.get("Eggs")}}</li>
+      <li class="cookies-ingredients-list-item">Extrait de vanille : {{Ingredients.get("VanillaExtract")}} cuillère à café</li>
+      <li class="cookies-ingredients-list-item">Farine : {{Ingredients.get("Flour")}}g</li>
+      <li class="cookies-ingredients-list-item">Levure chimique : {{Ingredients.get("BakingPowder")}} cuillère à café</li>
+      <li class="cookies-ingredients-list-item">Sel : {{Ingredients.get("Salt")}} cuillère à café</li>
+      <li class="cookies-ingredients-list-item">Chocolat : autant que vous voulez !</li>
+    </ul>
+  </div>
+</div>
