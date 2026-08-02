@@ -39,7 +39,7 @@ export class CookiesComponent {
   }
 
   private ResetIngredientAmount() {
-    this.Ingredients.set("Butter", 15.62).set("CocoSugar", 12.5).set("WhiteSugar", 9.4).set("Eggs", 0.12).set("VanillaExtract", 0.12).set("Flour", 33.125).set("BakingPowder", 0.19).set("Salt", 0.06);
+    this.Ingredients.set("Butter", this.Butter).set("CocoSugar", this.CocoSugar).set("WhiteSugar", this.WhiteSugar).set("Eggs", this.Eggs).set("VanillaExtract", this.VanillaExtract).set("Flour", this.Flour).set("BakingPowder", this.BakingPowder).set("Salt", this.Salt);
     this.UpdateIngredientsAmount();
   }
 }
